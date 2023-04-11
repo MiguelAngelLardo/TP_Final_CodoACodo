@@ -1,0 +1,52 @@
+header {
+    background: url(../resources/contacto.png)no-repeat;
+    background-size: cover;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 160 vw;
+    text-shadow: 5px 3 px 8 px #785;
+}
+
+.contenedor {
+    display: flex; /*Esto es para usar la propiedad flexbox */
+    flex-wrap: wrap; /*Evita que las columnas se desborden*/
+    display: flex;
+  }
+  
+  .columna-izquierda {
+    width: 50%; /*Establece la anchura de la columna izquierda*/
+    padding: 0 10px; /*Agregar un poco de espacio entre el borde y el contenido*/
+  }
+  
+  .columna-derecha {
+    width: 50%; /*Establece la anchura de la columna derecha*/
+    padding: 0 10px; /*Agregar un poco de espacio entre el borde y el contenido*/
+  }
+
+  .columna-izquierda p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .columna-derecha label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .columna-derecha input,
+  .columna-derecha textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
