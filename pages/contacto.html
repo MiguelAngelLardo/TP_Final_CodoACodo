@@ -22,9 +22,9 @@
     </header>
 
     <div class="contenedor">
-        <div class="columna-izquierda">
+        <div class="columna texto">
             <p>
-            <b>POLITICAS DE CANCELACION :</b> 
+            <h2>POLITICAS DE CANCELACION :</h2>
             <br><br>
             Las reservas se efectúan por orden de llegada
             por lo que las cancelaciones de último momento
@@ -41,7 +41,7 @@
             Si no se cumple con el plazo de cancelación el
             monto abonado no tendrá reembolso.
             <br><br><br>
-            <b>TÉRMINOS & CONDICIONES :</b>
+            <h2>TÉRMINOS & CONDICIONES :</h2>
             <br><br>
             CHECK IN: 14hs y CHECK OUT: 10hs.
             <br>
@@ -72,16 +72,55 @@
         </div>
 
 
-        <div class="columna-derecha">
+        <div class="columna formulario">
+            <h2>Formulario</h2>
             <form action="">
-                <label for="firstname">Nombre y Apellido:</label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..."> 
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"><br>
 
-            </form>
+                <label for="ciudad"></label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"><br>
 
-        
+                <label for="telefono"></label>
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono"><br>
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Correo electronico"><br>
+
+                <div class="form-row">
+                    <div class="form-col">
+                      <label for="mayores"></label><br>
+                      <input type="text" id="mayores" name="mayores" placeholder="Mayores">
+                    </div>
+            
+                    <div class="form-col">
+                      <label for="menores"></label><br>
+                      <input type="text" id="menores" name="menores" placeholder="Menores">
+                    </div>
+                  </div>
+            
+                  <div class="form-row">
+                    <div class="form-col"><br>
+                      <label for="ingreso">Fecha de Ingreso:</label><br>
+                      <input type="date" name="ingreso" id="ingreso" style="display: inline-block;">
+                    </div>
+            
+                    <div class="form-col"><br>
+                      <label for="salida">Fecha de Salida:</label> <br>
+                      <input type="date" name="salida" id="salida" style="display: inline-block;">
+                    </div>
+                  </div>
+
+                <label for="mensaje"></label><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+
+
+            </form>        
         
         </div>
-      </div>
+    </div>
 
 
    

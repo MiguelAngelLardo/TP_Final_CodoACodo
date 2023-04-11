@@ -1,52 +1,113 @@
+
 header {
-    background: url(../resources/contacto.png)no-repeat;
+    background: url(../resources/camping-07.jpg)no-repeat;
     background-size: cover;
     height: 100px;
     overflow: hidden;
     margin: 0 auto;
 }
+
 h1{
     color: #fff;
     text-align: center;
     font-family: 'Bangers', cursive;
     font-size: 160 vw;
-    text-shadow: 5px 3 px 8 px #785;
+    text-shadow: 5px 3 px 8 px #785; 
 }
 
-.contenedor {
-    display: flex; /*Esto es para usar la propiedad flexbox */
-    flex-wrap: wrap; /*Evita que las columnas se desborden*/
-    display: flex;
-  }
+.contenedor {    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  background-color: #f2f2f2;
+}
   
-  .columna-izquierda {
-    width: 50%; /*Establece la anchura de la columna izquierda*/
-    padding: 0 10px; /*Agregar un poco de espacio entre el borde y el contenido*/
-  }
-  
-  .columna-derecha {
-    width: 50%; /*Establece la anchura de la columna derecha*/
-    padding: 0 10px; /*Agregar un poco de espacio entre el borde y el contenido*/
-  }
+.columna {  
+  width: 50%;
+  padding: 1em;
+  min-height: 100%;
+}
 
-  .columna-izquierda p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
+.texto {
+  border-right: 1px solid #ccc;
+}
 
-  .columna-derecha label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;  
+}
+
+.form-col {
+  width: 50%;
   
-  .columna-derecha input,
-  .columna-derecha textarea {
+}
+
+.form-col input[type="text"] {
+  border: 2px solid black;
+  width: 90%;
+  padding: 5px;
+  
+}
+.texto h2 {
+  text-align: center;
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.formulario input[type="text"],.formulario input[type="email"],.formulario textarea {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: #f7f7f7;
+}
+
+.formulario textarea {
+  height: 7vh;
+  font-size: 200%;
+
+}
+
+
+.form-col input[type="date"] {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.formulario input[type="submit"] {
+  background-color: teal;
+  color: #fff;
+  border: 1 px solid black;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .columna {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 0;
   }
+}
+  
+
+
+
+
+ 
