@@ -99,6 +99,37 @@ h1{
   cursor: pointer;
 }
 
+
+.formulario input[type="submit"]:hover {
+  background-color: #006d6d;
+}
+
+.formulario input[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#info-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icono {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.texto {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px; /* o el tamaño que prefieras */
+  margin-left: 2em  
+}
+
+
 @media (max-width: 768px) {
   .columna {
     width: 100%;
