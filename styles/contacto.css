@@ -80,9 +80,7 @@ h1{
 .formulario textarea {
   height: 7vh;
   font-size: 200%;
-
 }
-
 
 .form-col input[type="date"] {
   width: 100%;
@@ -99,7 +97,6 @@ h1{
   cursor: pointer;
 }
 
-
 .formulario input[type="submit"]:hover {
   background-color: #006d6d;
 }
@@ -109,25 +106,21 @@ h1{
   cursor: not-allowed;
 }
 
-#info-contacto {
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  font-size: 150%;
 }
 
-.icono {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 
-.texto {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 18px; /* o el tamaño que prefieras */
-  margin-left: 2em  
-}
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
