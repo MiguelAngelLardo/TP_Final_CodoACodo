@@ -1,2 +1,42 @@
 @import url(../styles/style.css);
  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+
+ .divnos{
+    display: flex;
+    position:relative;
+    height: 30vw;
+    width: 100vw;
+    margin-bottom: 2em;
+   /*  background: URL(/TPO/imgs/sierrabrava.jpg) ;
+    background-repeat: no-repeat; */
+   
+}
+
+.textoimg{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+h1{
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.ctrtxt{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p{
+    font-size: 1.15em;
+}
