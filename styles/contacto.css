@@ -115,6 +115,10 @@ align-items: center;
 font-size: 150%;
 }
 
+#mensaje{
+  font-size: 1em;
+}
+
 
 
 @media screen and (max-width: 1231px) {
@@ -129,7 +133,6 @@ font-size: 150%;
   .contact-info{
     font-size: 90%;
   } 
-
 }
 
 
@@ -153,6 +156,6 @@ font-size: 150%;
     padding: 0.5em;
     min-height: 10%;
     width: 100%;
-    }
+    }   
 
 }
