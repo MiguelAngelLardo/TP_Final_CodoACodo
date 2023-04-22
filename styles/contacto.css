@@ -6,7 +6,6 @@
   margin-bottom: 20px;
 }
 
-
 .banner h1{
   color: #fff;
   margin-top: 130px;
@@ -25,15 +24,23 @@ background-color: #f2f2f2;
 }
 
 .columna {  
-width: 50%;
-padding: 1em;
-min-height: 100%;
+  width: 50%;
+  padding: 1em;
+  min-height: 100%;
 }
 
 .texto {
-border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
+.formulario form {
+display: flex;
+flex-direction: column;
+}
+
+.texto h2 {
+  text-align: center;
+  }
 
 .form-row {
 display: flex;
@@ -43,7 +50,6 @@ gap: 5%;
 
 .form-col {
 width: 50%;
-
 }
 
 .form-col input[type="text"] {
@@ -52,18 +58,12 @@ width: 90%;
 padding: 5px;
 
 }
-.texto h2 {
-text-align: center;
-}
+
 
 .formulario h2 {
 text-align: center;
 }
 
-.formulario form {
-display: flex;
-flex-direction: column;
-}
 
 .formulario label {
 font-weight: bold;
@@ -116,11 +116,52 @@ font-size: 150%;
 
 
 
-@media (max-width: 768px) {
-.columna {
-  width: 100%;
-  margin: 0;
-}
+@media screen and (max-width: 1231px) {
+  .banner{
+    height: 15vh;
+  }
+
+  .banner h1{
+    line-height: 15vh;
+  }  
+  
+  .contact-info{
+    font-size: 90%;
+  }
 }
 
 
+@media screen and (max-width: 768px) {
+  .banner{
+    height: 10vh;
+  }
+
+  .banner h1{
+    line-height: 10vh;
+  }    
+  .contact-info{
+    font-size: 70%;
+  }
+
+  .contenedor{
+    flex-direction: column;    
+  }
+
+  .columna {  
+    padding: 0.5em;
+    min-height: 10%;
+    width: 100%;
+    }
+
+    /*.texto {
+      order: ;
+    }
+
+    .formulario form{
+      order: 1;
+    }*/  
+  
+
+
+
+}
