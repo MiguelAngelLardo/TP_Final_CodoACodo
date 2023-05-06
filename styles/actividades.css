@@ -1,2 +1,69 @@
 @import url(../styles/style.css);
  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+
+.banner{
+  background: url(../resources/imagenes/actividades-02.jpg);   
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; /* Estira la imagen para cubrir todo el fondo */
+}
+
+main{
+  height: 120rem; /*con 100% no responde para bajar el footer*/
+}
+
+.banner h1{
+  color: #fff;
+  margin-top: 130px;
+  line-height: 30vh;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 4em ;
+  text-shadow: 5px 3 px 8 px #785; 
+} 
+
+.texto-foto{
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 100vw;
+  background-color: aquamarine;
+}
+
+.texto{
+  width: 70%;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+.foto{
+  background-color: blueviolet;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+.foto img{
+  border-radius: 10px;
+  height: 24%;
+  width: 70%;
+  }  
+
+.foto-abajo{
+  display: flex;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.foto-abajo img{
+  border-radius: 10px;  
+  width: 22%
+}
+
+
+
+  
