@@ -64,16 +64,15 @@ header {
   color: #33383b;
 }
 .menu-responsive {
-  height: 100%;
-  width: 100px;
+  height: 50%;
+  width: 50px;
   text-align: center;
   display: none;
   background-color: rgb(224, 157, 31);
   border-radius: 8%;
 }
 .menu-responsive img {
-  vertical-align: top;
-  padding: 23px;
+  vertical-align:middle;
 }
 /* / Style nav */
 
