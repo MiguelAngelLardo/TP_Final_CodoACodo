@@ -228,8 +228,9 @@ margin-bottom: 50px;
 
 /* footer */
 footer {
+
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background: #df7c0a;
 }
 .footer-content {
@@ -267,7 +268,7 @@ h3{
     display: block;
   }
   .container {
-    width: 95%;
+    width: 100vw;
   }
   .enlaces {
     position: fixed;
@@ -311,7 +312,7 @@ h3{
   }
 
   .container {
-    width: 95%;
+    width: 100%;
   }
   .nav-container a {
     height: 90px;
