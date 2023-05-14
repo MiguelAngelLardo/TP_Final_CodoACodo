@@ -24,9 +24,9 @@
     top: 50%;
     left: 50%;
     color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Agregamos una sombra al texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     transform: translate(-50%, -50%);
-    font-size: 2vw; /* Ajustamos el tamaño de letra */
+    font-size: 2vw; 
 }
 
 .center{
@@ -48,4 +48,12 @@ h1{
 
 p{
     font-size: 1.15em;
+}
+@media (max-width: 768px) {
+    .divnos{
+        height: 50vh;
+    }
+    .textoimg{
+        font-size: 1 rem;
+    }
 }
