@@ -11,7 +11,7 @@
 }
 
 main{
-  height: 120rem; /*con 100% no responde para bajar el footer*/
+  height: 115rem; /*con 100% no responde para bajar el footer*/
 }
 
 .banner h1{
@@ -24,34 +24,32 @@ main{
   text-shadow: 5px 3 px 8 px #785; 
 } 
 
-.texto-foto{
+.texto-foto1{
   display: flex;
   flex-wrap: wrap;
   height: 70vh;
   width: 100vw;
-  background-color: aquamarine;
 }
 
-.texto{
+.texto1{
   width: 70%;
   font-size: 1.5em;
   padding: 0.5em;
 }
 
-.foto{
-  background-color: blueviolet;
+.foto1{
   width: 30%;
   height: 100%;
   text-align: center;
 }
 
-.foto img{
+.foto1 img{
   border-radius: 10px;
-  height: 24%;
+  height: 23%;
   width: 70%;
   }  
 
-.foto-abajo{
+.foto-abajo1{
   display: flex;
   width: 100vw;
   height: auto;
@@ -59,10 +57,83 @@ main{
   justify-content: space-around;
 }
 
-.foto-abajo img{
+.foto-abajo1 img{
   border-radius: 10px;  
-  width: 22%
+  margin-right: 2em;
+  width: 23%
 }
+
+
+@media screen and (max-width: 1231px) {
+  main{
+    height: 125rem; /*con 100% no responde para bajar el footer*/
+  }
+  
+  .texto-foto1{
+    height: 70vh;
+    width: 100vw;
+  }
+  .texto1{
+    width: 65%;
+    font-size: calc(1.8em - 0.9vw);
+    padding: 0.5em;
+  }
+  .foto1{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .foto1 img{
+    border-radius: 10px;
+    height: 14%;
+    width: 50%;
+    }  
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  main{
+    height: 90rem; /*con 100% no responde para bajar el footer*/
+  }
+ 
+  .texto-foto1 {
+    flex-direction: column;
+  }
+  .texto1 {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 0.5em;
+  }
+
+  .foto1 {
+   display: none; /* Oculta el elemento */
+
+  }
+  
+  .foto-abajo1 {
+    order: -1; /* Cambia el orden, se muestra después */
+    display: flex;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .foto-abajo1 img{
+    border-radius: 10px;  
+    width: 19%;
+    margin-left: 1.0em;
+  }
+  
+  
+ 
+}
+
+
+
 
 
 
