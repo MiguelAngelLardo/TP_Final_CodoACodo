@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
 
 .banner{
   background: url(../resources/imagenes/ruca-lauquen-laguna-brava2.jpg);   
@@ -11,7 +17,6 @@
   margin-top: 130px;
   line-height: 30vh;
   text-align: center;
-  font-family: 'Bangers', cursive;
   font-size: 4em ;
   text-shadow: 5px 3 px 8 px #785; 
 }

@@ -1,2 +1,123 @@
 @import url(../styles/style.css);
- @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+/* banner */
+.banner-camping {
+    display: flex;
+    position: relative;
+    height: 30vw;
+    width: 100vw;
+    margin-bottom: 2em;
+  }
+  
+  .banner-camping img {
+    width: 100vw;
+    height: auto;
+  }
+  
+  .banner-camping-title {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Agregamos una sombra al texto */
+    transform: translate(-50%, -50%);
+    font-size: 2vw; /* Ajustamos el tamaño de letra */
+ 
+  }
+.contenedor h1{
+    margin: 0;
+}
+
+/* sectores  */
+
+.sectores{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.sectores_dos{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.sectores_picnic{
+    display: flex;
+    width: 40%;
+}
+.sectores_picnic img{
+   width: 0;
+   flex-grow:1;
+   object-fit:cover ;
+   opacity: .8;
+   transition: .5s ease;
+}
+.sectores img:hover{
+    cursor:crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(150%);
+}
+.sectores_dos img:hover{
+    cursor:crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(150%);
+}
+.sectores_picnic--text{
+    width: 50%;
+}
+
+/* responsive area */
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 95%;
+        align-items: center;
+    }
+    .banner-camping{
+        height: 500px;
+    }
+  
+   .sectores{
+    flex-direction: column;
+   }
+   .sectores_picnic{
+    width: 300px;
+    aspect-ratio: 10/16;
+    position: relative;
+    overflow:scroll;
+    }
+    .sectores_picnic::-webkit-scrollbar{
+        width: 1px;
+    }
+    .sectores_picnic img{
+        width: 100%;
+        left: 0;
+        position:sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+     }
+     .sectores_picnic--text{
+        margin-top:-200px;
+        width: 100%;
+     }
+   .sectores_dos{
+    flex-direction:column-reverse;
+   }
+
+   .sectores_picnic img{
+    height: 50%;
+   }
+   
+  }

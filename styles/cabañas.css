@@ -1,2 +1,255 @@
-@import url(../styles/style.css);
- @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+/*Estilos para el banner*/
+
+.banner-cabaña {
+  background: url(../resources/imagenes/banner-cabaña.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.banner-cabaña h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+
+  
+ /* Estilos para la sección de cabañas */
+.cabañas {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   box-sizing: border-box;
+  }
+  
+  .cabañas-img {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .cabañas-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .cabañas-descripcion {
+    margin-top: 50px;
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+ 
+  }
+  
+  .cabañas-descripcion h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  
+  .cabañas-descripcion ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 20px 0 50px 0;
+    font-size: 1.2rem;
+  }
+  
+  .cabañas-descripcion ul li{
+   line-height: 2;
+   text-decoration: none;
+   text-align: center;
+  }
+  .cabañas-descripcion a{
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      color: #000;
+      text-decoration: none;
+      box-shadow: 0 3px 5px 0 rgba(255, 255, 255, .4);
+      transition: .2s;
+      padding: 5px;
+      background-color: #81b5df;
+    }
+    .cabañas-descripcion a:hover{ transform:translateY(-5px) scale(1.05);
+      box-shadow: 0 3px 5px 0 rgba(255, 255, 255, .6);
+      filter:none ;
+      color: #000;
+      background-color: #81b5df;
+  }
+  
+ 
+  .cabañas-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  
+  .cabañas-fotos img {
+    width: 23%;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  /*Estilos para los servicios*/
+  
+  .servicios {
+    width: 100vw;
+    height: auto;
+    margin: 30px 0px;
+    text-align: center;
+ 
+  
+  }
+
+  .texto {
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+  }
+
+  .iconos {
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconos ol {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+
+  }
+
+  .iconos ol li {
+    list-style: none;
+    margin:0 2px 10px 2px;
+    width: 16%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .iconos ol li:hover{ 
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, .6);
+    filter: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+
+  .iconos img {
+    width: 8vw;
+  }
+  .adicional {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    background-color: #81b5df;
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  li:hover .adicional {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+/* AREA RESPONSIVA*/
+  @media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    .banner-cabaña{
+      height: 20vh;
+    }
+    .cabañas-img{
+      padding: 0;
+    }
+    .banner-cabaña h1{
+      size: 1rem;
+    }
+    
+    .cabañas{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .cabañas-img{
+      width: 100%;
+      margin-bottom: 10px;
+      order: 1;
+    }
+    
+    .cabañas-descripcion{
+    width:100% ;
+    margin-bottom: 25px;
+    }
+    
+    .cabañas-descripcion h2{
+      font-size: 1.5 rem;
+    }
+    .cabañas-descripcion ul{
+      font-size: 1rem;
+      margin: 15px 0px;
+      width: 100vw;
+    }
+    .cabañas-descripcion a{
+      font-size: 0.8rem;
+    }
+
+    .cabañas-fotos{
+      width: 100vw;
+      order: 3;
+    }
+    .cabañas-fotos img {
+    width: 100vw;
+      margin: 10px;
+    }
+    .texto{
+      font-size: 0.8rem;
+    }
+    .texto h2{
+      margin-bottom: 5px;
+    }
+    .iconos ol li {
+      width: 22%;
+      font-size: 0.8rem;
+    }
+    .adicional{
+    display: inline-block;
+    }
+  
+  }
+ 
