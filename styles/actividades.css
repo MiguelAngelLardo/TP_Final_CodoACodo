@@ -68,16 +68,18 @@ main{
   main{
     height: 125rem; /*con 100% no responde para bajar el footer*/
   }
-  
+
   .texto-foto1{
     height: 70vh;
     width: 100vw;
   }
+
   .texto1{
     width: 65%;
     font-size: calc(1.8em - 0.9vw);
     padding: 0.5em;
   }
+
   .foto1{
     width: 35%;
     height: 100%;
@@ -88,15 +90,19 @@ main{
     border-radius: 10px;
     height: 14%;
     width: 50%;
-    }  
+  }  
 
-
+  .foto-abajo1 img{
+    border-radius: 10px;  
+    width: 20%;
+    margin-left: 1.0em;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
   main{
-    height: 90rem; /*con 100% no responde para bajar el footer*/
+    height: 85rem; /*con 100% no responde para bajar el footer*/
   }
  
   .texto-foto1 {
