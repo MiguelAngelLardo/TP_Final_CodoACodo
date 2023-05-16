@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Laguna La Brava,cabañas, turismo,balcarce, camping,descanso,kayack,parapente"/>
     <meta name=" description" content="Bienvenidos al Complejo La Brava. Un lugar de descanso diferente, en donde el sonido de la naturaleza y el aire de las sierras se hace presente."/>
-     <meta name="author" lang="es" content="Juan Pablo Portugal,
-     Miguel Angel Lardo, Manuel Eduardo Rodriguez Rivas,Natalia Mucci,"/>
+     <meta name="author" lang="es" content="Juan Pablo Portugal, Miguel Angel Lardo, Manuel Eduardo Rodriguez Rivas,Natalia Mucci,"/>
      <meta name="copyrigth" content=" Grupo 4 de copas"/>
      <meta name="robots" content="index,follow"/>
      <link rel="icon" type="image/png" href="../resources/icono.png">
      <link rel="stylesheet" href="../styles/style.css">
-    <title>Contacto</title>
-    <script src="https://kit.fontawesome.com/fc647e5ff9.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="container nav-container">
-      <a href="/index.html">
-        <picture class="nav-branding">
+     
+     <title>Contacto</title>
+     <script src="https://kit.fontawesome.com/fc647e5ff9.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <header>
+        <nav class="container nav-container">
+          <a href="/index.html">
+            <picture class="nav-branding">
           <img src="../resources/logo.png" alt="logo Complejo La Brava">
         </picture>
       </a>
@@ -43,19 +43,19 @@
     <section class="banner">
       <h1>Contacto</h1>
     </section>
-
+    
     <section>
       <div class="contenedor">
         <div class="columna texto">
           <p>
-          <h2>POLITICAS DE CANCELACION :</h2>
-          <br><br>
-          Las reservas se efectúan por orden de llegada
-          por lo que las cancelaciones de último momento
-          nos generan un espacio vacío, imposibilitando la
-          reserva a otro huésped. por este motivo
-          implementamos lo siguiente:
-          <br>
+            <h2>POLITICAS DE CANCELACION :</h2>
+            <br><br>
+            Las reservas se efectúan por orden de llegada
+            por lo que las cancelaciones de último momento
+            nos generan un espacio vacío, imposibilitando la
+            reserva a otro huésped. por este motivo
+            implementamos lo siguiente:
+            <br>
           Cancelación previa de 7 días para la
           reprogramación de una nueva reserva. La cual
           estará sujeta al aumento en el precio anterior
@@ -92,21 +92,21 @@
           tipo y número de documento/cuit/cuil),celular y la
           hora aproximada de ingreso al complejo. El saldo
           se abona al INGRESAR al complejo(sin excepción).
-          </p>          
-        </div> <!-- columna texto -->
-        
-        <div class="columna formulario">
-          <h2>Formulario</h2>
-          <form action="">
-            <label for="nombre"></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"><br>
-
-            <label for="ciudad"></label>
-            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"><br>
-
-            <label for="telefono"></label>
-            <input type="text" id="telefono" name="telefono" placeholder="Telefono"><br>
-
+        </p>          
+      </div> <!-- columna texto -->
+      
+      <div class="columna formulario">
+        <h2>Formulario</h2>
+        <form action="" name="formulario" method="get>
+          <label for="nombre"></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"><br>
+          
+          <label for="ciudad"></label>
+          <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"><br>
+          
+          <label for="telefono"></label>
+          <input type="text" id="telefono" name="telefono" placeholder="Telefono"><br>
+          
             <label for="email"></label>
             <input type="email" id="email" name="email" placeholder="Correo electronico"><br>
 
@@ -115,41 +115,45 @@
                 <label for="mayores"></label><br>
                 <input type="text" id="mayores" name="mayores" placeholder="Mayores">
               </div>
-        
+              
               <div class="form-col">
                 <label for="menores"></label><br>
                 <input type="text" id="menores" name="menores" placeholder="Menores">
               </div>
             </div>
-        
+            
             <div class="form-row">
               <div class="form-col"><br>
                 <label for="ingreso">Fecha de Ingreso:</label><br>
                 <input type="date" name="ingreso" id="ingreso" style="display: inline-block;">
               </div>
-        
+              
               <div class="form-col"><br>
                 <label for="salida">Fecha de Salida:</label> <br>
                 <input type="date" name="salida" id="salida" style="display: inline-block;">
               </div>
             </div>
-
+            
             <label for="mensaje"></label><br>
             <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea><br><br>
+            <label for="terminos"><input type="checkbox" name="terminos" id="terminos"> Acepto los Términos y Condiciones</label>
+            
+            
+            <input type="submit" id="b1" value="Enviar">
+            <span id="mensajeError"></span>
 
-            <input type="submit" value="Enviar">
-
+            
             <div class="contact-info">
               <p><i class="fas fa-phone"></i>         Teléfono: +5492235287012</p>
               <p><i class="fas fa-map-marker-alt"></i>      Dirección: Au Ruta Nacional 226 km 39,5</p>
               <p><i class="fas fa-envelope"></i>      Correo electrónico: complejolabrava@gmail.com
-            </div>                
-          </form>     
-        </div><!-- columna formulario -->  
-      </div> <!--termina contenedor -->
+              </div>                
+            </form>     
+          </div><!-- columna formulario -->  
+        </div> <!--termina contenedor -->
     </section>    
   </main>
-
+  
   <footer>
     <h3>contactemos</h3>
     <div class="container footer-content">      
@@ -161,8 +165,14 @@
     </div>          
     <p class="copy"> &copy 2023 Copyright: grupo CAC</p>
   </footer>
+  
+  <script>
     
+  </script>
+ 
+ 
 </body>
 <script src="../js/navbar.js"></script>
 <script src="https://kit.fontawesome.com/3d09fa9176.js" crossorigin="anonymous"></script>
+<script src="../js/formulario.js"></script>
 </html>
