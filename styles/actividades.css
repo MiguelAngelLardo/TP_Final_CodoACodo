@@ -110,7 +110,7 @@ main{
   }
   .texto1 {
     width: 100%;
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding: 0.5em;
   }
 
@@ -130,12 +130,9 @@ main{
 
   .foto-abajo1 img{
     border-radius: 10px;  
-    width: 19%;
+    width: 15%;
     margin-left: 1.0em;
   }
-  
-  
- 
 }
 
 
