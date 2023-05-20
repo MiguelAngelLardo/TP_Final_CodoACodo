@@ -21,3 +21,16 @@ const obtenerClimaPorCoordenadas = () => {
 document.addEventListener('DOMContentLoaded', function() {
   obtenerClimaPorCoordenadas();
 });
+  
+  //obtener la fecha actual
+  function formatearFecha(fecha) {
+    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+    return fecha.toLocaleDateString(undefined, opciones);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const fechaActual = new Date();
+    const fechaFormateada = formatearFecha(fechaActual);
+    document.getElementById("fecha").textContent = fechaFormateada;
+  });
+  

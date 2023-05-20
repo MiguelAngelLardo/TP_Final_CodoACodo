@@ -1,37 +1,26 @@
 @import url(../styles/style.css);
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-  }
-  
 /* banner */
-.banner-camping {
-    display: flex;
+ .banner-camping{
     position: relative;
-    height: 30vw;
-    width: 100vw;
-    margin-bottom: 2em;
-  }
-  
-  .banner-camping img {
-    width: 100vw;
-    height: auto;
-  }
-  
-  .banner-camping-title {
-    margin-top: 50px;
+    width: 100%;
+    height: 800px;
+    background:linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)), url(../resources/imagenes/camping1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    margin-bottom: 50px;
+ }
+.banner-title{
     position: absolute;
     top: 50%;
-    left: 50%;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Agregamos una sombra al texto */
+    left:50%;
     transform: translate(-50%, -50%);
-    font-size: 2vw; /* Ajustamos el tamaño de letra */
- 
-  }
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
 .contenedor h1{
     margin: 0;
 }
