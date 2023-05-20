@@ -25,6 +25,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: #f2f2f2;
 }
 
 .columna {  
@@ -44,7 +45,7 @@ flex-direction: column;
 
 .texto h2 {
   text-align: center;
-}
+  }
 
 .form-row {
 display: flex;
@@ -60,11 +61,14 @@ width: 50%;
 border: 2px solid black;
 width: 90%;
 padding: 5px;
+
 }
+
 
 .formulario h2 {
 text-align: center;
 }
+
 
 .formulario label {
 font-weight: bold;
@@ -91,7 +95,7 @@ font-size: 20px;
 }
 
 .formulario input[type="submit"] {
-background-color: #81b5df;
+background-color: teal;
 color: #fff;
 border: 1 px solid black;
 padding: 0.5em 1em;
@@ -100,8 +104,7 @@ cursor: pointer;
 }
 
 .formulario input[type="submit"]:hover {
-  background-color: #588fce;
-  color: #fff;
+background-color: #006d6d;
 }
 
 .formulario input[type="submit"]:disabled {
@@ -110,21 +113,14 @@ cursor: not-allowed;
 }
 
 .contact-info {
-  display: flex;
-  margin-top: 1em;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(1.5em - 0.4vh);
+display: flex;
+margin-top: 1em;
+flex-direction: column;
+align-items: center;
+font-size: 150%;
 }
 
-#mensajeError {
- color: red;
- text-shadow: 0px 0px 5px red;
-}
 
-#mensaje{
-  font-size: 0.9em;
-}
 
 @media screen and (max-width: 1231px) {
   .banner{
@@ -136,9 +132,11 @@ cursor: not-allowed;
   }  
   
   .contact-info{
-    font-size: 80%;
+    font-size: 90%;
   } 
+
 }
+
 
 @media screen and (max-width: 768px) {
   .banner{
@@ -160,5 +158,6 @@ cursor: not-allowed;
     padding: 0.5em;
     min-height: 10%;
     width: 100%;
-  }   
+    }
+
 }

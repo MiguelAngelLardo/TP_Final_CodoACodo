@@ -23,3 +23,28 @@ const obtenerClimaPorCoordenadas = () => {
 document.addEventListener('DOMContentLoaded', function() {
   obtenerClimaPorCoordenadas();
 });
+
+function httpGetAsync(url, callback) {
+  const xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+      callback(xmlHttp.responseText);
+  };
+  xmlHttp.open("GET", url, true); // true for asynchronous
+  xmlHttp.send(null);
+}
+//obtener la fecha actual
+function formatearFecha(fecha) {
+  const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+  return fecha.toLocaleDateString(undefined, opciones);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const fechaActual = new Date();
+  const fechaFormateada = formatearFecha(fechaActual);
+  document.getElementById("fecha").textContent = fechaFormateada;
+});
+
+
+
+
