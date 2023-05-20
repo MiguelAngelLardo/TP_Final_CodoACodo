@@ -33,6 +33,7 @@ function httpGetAsync(url, callback) {
   xmlHttp.open("GET", url, true); // true for asynchronous
   xmlHttp.send(null);
 }
+
 //obtener la fecha actual
 function formatearFecha(fecha) {
   const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
