@@ -68,6 +68,13 @@ main{
   main{
     height: 125rem; /*con 100% no responde para bajar el footer*/
   }
+  .banner{
+    height: 15vh;
+  }
+
+  .banner h1{
+    line-height: 15vh;
+  }  
 
   .texto-foto1{
     height: 70vh;
@@ -102,15 +109,23 @@ main{
 
 @media screen and (max-width: 768px) {
   main{
-    height: 85rem; /*con 100% no responde para bajar el footer*/
+    height: 65rem; /*con 100% no responde para bajar el footer*/
   }
+
+  .banner{
+    height: 10vh;
+  }
+
+  .banner h1{
+    line-height: 10vh;
+  }  
  
   .texto-foto1 {
     flex-direction: column;
   }
   .texto1 {
     width: 100%;
-    font-size: 0.9em;
+    font-size: 7em;
     padding: 0.5em;
   }
 
