@@ -1,16 +1,36 @@
 @import url(../styles/style.css);
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
 /* banner */
- .banner-camping{
+/*  .banner-camping{
     position: relative;
     width: 100%;
-    height: 800px;
+  height: 40vh;
     background:linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)), url(../resources/imagenes/camping1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y:bottom;
     margin-bottom: 50px;
- }
+ } */
+ .banner-camping {
+    background:linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)), url(../resources/imagenes/camping1.jpg);
+    background-size: cover;
+    background-position:bottom;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-camping h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    line-height: 1.2;
+  }
 .banner-title{
     position: absolute;
     top: 50%;
@@ -39,7 +59,7 @@
 }
 .sectores_picnic{
     display: flex;
-    width: 40%;
+    width: 45%;
 }
 .sectores_picnic img{
    width: 0;
@@ -50,18 +70,21 @@
 }
 .sectores img:hover{
     cursor:crosshair;
-    width: 250px;
+    width: 2em;
     opacity: 1;
     filter: contrast(150%);
 }
 .sectores_dos img:hover{
     cursor:crosshair;
-    width: 250px;
+    width: 2em;
     opacity: 1;
     filter: contrast(150%);
 }
 .sectores_picnic--text{
     width: 50%;
+}
+.sectores_picnic--text h2{
+    margin-bottom: 0.5em;
 }
 
 /* responsive area */
