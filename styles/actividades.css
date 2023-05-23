@@ -125,7 +125,7 @@ main{
   }
   .texto1 {
     width: 100%;
-    font-size: 7em;
+    font-size: calc(7em - 0.8em);
     padding: 0.5em;
   }
 
