@@ -5,20 +5,26 @@
   font-family: "Raleway", sans-serif;
 }
 
-.banner{
+.banner-contacto{
   background: url(../resources/imagenes/ruca-lauquen-laguna-brava2.jpg);   
-  width: 100vw;
-  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.banner h1{
+.banner-contacto h1{
   color: #fff;
-  margin-top: 130px;
-  line-height: 30vh;
+  font-family: 'Bangers', cursive;
   text-align: center;
-  font-size: 4em ;
-  text-shadow: 5px 3 px 8 px #785; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 5rem;
+  line-height: 1.2;
 }
 
 .contenedor {    

@@ -21,10 +21,12 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+
 }
 
 .banner-cabaña h1 {
   color: #fff;
+  font-family: 'Bangers', cursive;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   font-size: 5rem;
@@ -194,12 +196,13 @@
     .banner-cabaña{
       height: 20vh;
     }
+    .banner-cabaña h1{
+      size: 0.8rem;
+    }
     .cabañas-img{
       padding: 0;
     }
-    .banner-cabaña h1{
-      size: 1rem;
-    }
+    
     
     .cabañas{
       display: flex;

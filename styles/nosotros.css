@@ -1,4 +1,4 @@
-@import url(../styles/style.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
 
 * {
@@ -23,6 +23,7 @@
 
 .banner-nosotros h1 {
   color: #fff;
+  font-family: 'Bangers', cursive;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   font-size: 5rem;
@@ -92,14 +93,14 @@
   }
   
   .banner-nosotros h1 {
-    size: 1rem;
+    size: 0.8rem;
   }
 
-  h1{
+  .titulos-nosotros{
     font-size: 2.5rem;
   }
 
-  p{
+  .ctrtxt{
     font-size: 1rem;
   }
 }
